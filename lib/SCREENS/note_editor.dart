@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 
 import '../STYLE/app_style.dart';
 
-//oz notlarimizi elave ede bildiyimiz bolge
 class NoteEditorScreen extends StatefulWidget {
   const NoteEditorScreen({Key? key}) : super(key: key);
 
@@ -14,7 +13,7 @@ class NoteEditorScreen extends StatefulWidget {
 }
 
 class _NoteEditorScreenState extends State<NoteEditorScreen> {
-  //color_id  note rengini bildirir imis )
+  
   int color_id = Random().nextInt(AppStyle.cardsColor.length);
 
   String date = DateTime.now().toString();
@@ -67,7 +66,7 @@ class _NoteEditorScreenState extends State<NoteEditorScreen> {
             ),
           ]),
       ),
-      //SAVE BUtton
+    
       floatingActionButton: FloatingActionButton(
         backgroundColor: AppStyle.accentColor,
         onPressed: () async {
