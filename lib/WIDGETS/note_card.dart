@@ -13,7 +13,6 @@ Widget noteCard(Function()? onTap, QueryDocumentSnapshot doc) {
         borderRadius: BorderRadius.circular(8.0),        
       ),
 
-//her bir card icindeki yazinin dekorasiyasini edirik, Firebase icerisindeki
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
