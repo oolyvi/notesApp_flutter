@@ -19,8 +19,8 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: AppStyle.mainColor,
       appBar: AppBar(
-        elevation: 0.0,   //yukseklik
-        title: Text('Why You Note?'),
+        elevation: 0.0,   
+        title: Text('Notes App?'),
         centerTitle: true,
         backgroundColor: AppStyle.mainColor,
       ),
@@ -48,14 +48,13 @@ class _HomeScreenState extends State<HomeScreen> {
         Expanded (
           child: StreamBuilder <QuerySnapshot>(
             stream: FirebaseFirestore.instance.collection('notes').snapshots(),
-            builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
-              //checking the connection state, loading progress bar screen
+            builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {        
               if (snapshot.connectionState == ConnectionState.waiting) {
                 return Center(
                   child: CircularProgressIndicator(),
              );
             }
-              if (snapshot.hasData) {      //data varsa, yeni HAS DATA
+              if (snapshot.hasData) {      
                   return GridView(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2),
         
@@ -67,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
                    );
               }
         
-                 return Text('There is not any notes', style: GoogleFonts.nunito(color: Colors.white));
+                 return Text('There are not any notes', style: GoogleFonts.nunito(color: Colors.white));
             },
            
           ),
@@ -76,9 +75,9 @@ class _HomeScreenState extends State<HomeScreen> {
       ],
     ),
   ),
-            //scaffoldun icinde yaziriq bu floatingactionbuttonu, yeni ADD NOTE u
+           
               floatingActionButton: FloatingActionButton.extended(
-                onPressed: (){      //basanda note editr screen;e kecid edir
+                onPressed: (){      
                   Navigator.push(context, MaterialPageRoute(builder: (context) => NoteEditorScreen()));
                 },
                 label: Text('Add Note'),
