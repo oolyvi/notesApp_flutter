@@ -2,7 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:why_you_note/STYLE/app_style.dart';
 
-//note'larin ici yeni yazdigin yer
 class NoteReaderScreen extends StatefulWidget {
    NoteReaderScreen(this.doc, {Key? key}) : super(key: key);
 
