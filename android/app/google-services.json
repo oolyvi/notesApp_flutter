@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "40063754827",
+    "project_id": "why-you-note-f463a",
+    "storage_bucket": "why-you-note-f463a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40063754827:android:a8a7ef269adb7c18d4a3ce",
+        "android_client_info": {
+          "package_name": "com.example.why_you_note"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40063754827-2i73gaj5bf8aaeovb15psbr37ni4hfrc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi6Ysn6YWxy8p7mi_Yw7VzRPQizGkDVkk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "40063754827-2i73gaj5bf8aaeovb15psbr37ni4hfrc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
